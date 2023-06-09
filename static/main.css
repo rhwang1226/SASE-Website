@@ -1,0 +1,88 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size:1.4em;
+}
+
+.titleFont {
+    font-family: 'Staatliches', cursive;
+}
+
+.umichBlue {
+    color: #00274C;
+}
+
+.umichBlueBg {
+    background-color: #00274C;
+}
+
+.maize {
+    color: #FFCB05;
+}
+
+.maizeBg {
+    background-color: #FFCB05;
+}
+
+.saseGreen {
+    color:#7DC242;
+}
+
+.saseGreenBg {
+    background-color:#7DC242;
+}
+
+.white {
+    color:white;
+}
+
+.whiteBg {
+    background-color:white;
+}
+
+h1 {
+    font-size:6rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size:2rem;
+}
+
+#navbarBasic {
+    font-size: 1.3rem;
+}
+
+#intro {
+      /* The image used */
+  background-image: url("resources/introBg1.png");
+
+  /* Set a specific height */
+  height:100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.gap {
+      /* The image used */
+  background-image: url("resources/introBg.jpg");
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
