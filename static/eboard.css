@@ -3,6 +3,10 @@ body {
     font-size:1.3em;
 }
 
+.navbar {
+    background-color: #002C5F;
+}
+
 .titleFont {
     font-family: 'Staatliches', cursive;
 }

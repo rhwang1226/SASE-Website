@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SASE at the University of Michigan</title>
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="/static/main.css">
+  </head>
+
+  <body>
+    <div id="intro" class="parallax">
+      {% include 'navbar.html' %}
+
+      <div class="container welcome">
+        <h1 class="maize has-text-weight-bold titleFont">Welcome to SASE!</h1>
+        <h2 class="white has-text-weight-bold titleFont">Society of Asian Scientists and Engineers at the University of Michigan</h2>
+      </div>
+    </div>
+
+    <section class="section is-large">
+      <div class="container">
+        <p class="is-size-1 pb-6 umichBlue titleFont has-text-centered">Why You Should Join</p>
+        <div class="columns has-text-centered">
+          <div class="column">
+            <ion-icon name="people" class="icon is-large"></ion-icon>
+            <p class="titleFont is-size-3 pb-5">Connect</p>
+            <p>We believe that true connections are the foundation of personal and professional growth.
+              We provide a vibrant community where like-minded individuals come together to forge meaningful connections that last a lifetime. 
+              Whether you're looking to expand your network, enhance your skills, or simply meet inspiring people, we have created the perfect environment for you.</p>
+          </div>
+          <div class="column">
+            <ion-icon name="accessibility" class="icon is-large"></ion-icon>
+            <p class="titleFont is-size-3 pb-5">Grow</p>
+            Through our carefully curated events, workshops, and seminars, we offer a diverse range of opportunities to expand your knowledge, skills, and perspectives. 
+            Attend our expert-led seminars, where industry leaders share their insights and experiences. 
+            Engage in interactive workshops designed to enhance your personal effectiveness, leadership abilities, and communication skills.
+          </div>
+          <div class="column">
+            <ion-icon name="bulb" class="icon is-large"></ion-icon>
+            <p class="titleFont is-size-3 pb-5">Innovate</p>
+            SASE is a hub for knowledge-sharing and continuous learning. 
+            Our club hosts workshops, guest speaker events, and skill-building sessions that enhance your creative thinking abilities. 
+            Learn practical techniques for idea generation, problem-solving, and effective communication. 
+            Expand your toolkit of creative methods and gain the confidence to think outside the box.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-medium">
+      <div class="hero-body" id="gap1"></div>
+    </section>
+    
+    <section class="section is-large">
+      <div class="container white px-6">
+        <p class="is-size-1 pb-5 umichBlue titleFont">Our Mission</p>
+        <p class="slateGray">
+          The Society of Asian Scientists and Engineers is a nation-wide organization with the mission of providing opportunities for scientists and engineers of Asian heritage to enhance their professional skills and to connect them with industry-leading companies. 
+          Our chapter aims to create a community of students at Michigan, and act as a gateway to workshops, volunteering events, company information sessions and much more. 
+          We welcome students of all backgrounds to not only take advantage of the numerous events we organize, but also to help us in making these events possible!
+        </p>
+      </div>
+    </section>
+
+    <section class="hero is-medium">
+      <div class="hero-body" id="gap2"></div>
+    </section>
+
+    {% include 'footer.html' %}
+
+    <script src="/static/main.js"></script>
+  </body>
+</html>
