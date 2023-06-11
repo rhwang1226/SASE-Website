@@ -114,4 +114,8 @@ ion-icon {
     font-size: 256px;
 }
 
-.footer
+@media screen and (min-width: 1408px) {
+    .container:not(.is-max-desktop):not(.is-max-widescreen) {
+        max-width: 960px;
+    }
+}

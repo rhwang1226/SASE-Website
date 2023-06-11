@@ -7,6 +7,10 @@ body {
     background-color: #002C5F;
 }
 
+.defaultFont {
+    font-family: 'Inter', sans-serif;
+}
+
 .titleFont {
     font-family: 'Staatliches', cursive;
 }
@@ -60,8 +64,8 @@ h2 {
     font-size: 1.3rem;
 }
 
-
-
-ion-icon {
-    font-size: 256px;
+@media screen and (min-width: 1408px) {
+    .container:not(.is-max-desktop):not(.is-max-widescreen) {
+        max-width: 960px;
+    }
 }
