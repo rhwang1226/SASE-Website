@@ -10,12 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="main.css">
   </head>
 
-  <body class="umichBlueBg">
+  <body>
     <div id="intro" class="parallax">
-      <nav class="navbar umichBlueBg" role="navigation" aria-label="main navigation">
+      <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color: rgba(0,0,0,0);">
         <div class="container">
           <div class="navbar-brand">
             <a class="navbar-item">
@@ -30,40 +32,77 @@
           </div>
     
           <div id="navbarBasic" class="navbar-menu navbar-end">
-            <a class="navbar-item white px-6">Home</a>
-            <a class="navbar-item white px-6">E-Board</a>
-            <a class="navbar-item white px-6">Calendar</a>
-            <a class="navbar-item white px-6">Join</a>
+            <a class="navbar-item maize px-6 has-text-weight-bold">Home</a>
+            <a class="navbar-item maize px-6 has-text-weight-bold">E-Board</a>
+            <a class="navbar-item maize px-6 has-text-weight-bold">Calendar</a>
+            <a class="navbar-item maize px-6 has-text-weight-bold">Join</a>
           </div>
         </div>
       </nav>
 
       <div class="container welcome">
-        <h1 class="saseGreen">Welcome to SASE!</h1>
-        <h2 class="white">Society of Asian Scientists and Engineers at the University of Michigan</h2>
+        <h1 class="maize has-text-weight-bold titleFont">Welcome to SASE!</h1>
+        <h2 class="white has-text-weight-bold titleFont">Society of Asian Scientists and Engineers at the University of Michigan</h2>
       </div>
     </div>
 
     <section class="section is-large">
       <div class="container">
-        
+        <p class="is-size-1 pb-6 umichBlue titleFont has-text-centered">Why You Should Join</p>
+        <div class="columns has-text-centered">
+          <div class="column">
+            <ion-icon name="people" class="icon is-large"></ion-icon>
+            <p class="titleFont is-size-3 pb-5">Connect</p>
+            <p>We believe that true connections are the foundation of personal and professional growth.
+              We provide a vibrant community where like-minded individuals come together to forge meaningful connections that last a lifetime. 
+              Whether you're looking to expand your network, enhance your skills, or simply meet inspiring people, we have created the perfect environment for you.</p>
+          </div>
+          <div class="column">
+            <ion-icon name="accessibility" class="icon is-large"></ion-icon>
+            <p class="titleFont is-size-3 pb-5">Grow</p>
+            Through our carefully curated events, workshops, and seminars, we offer a diverse range of opportunities to expand your knowledge, skills, and perspectives. 
+            Attend our expert-led seminars, where industry leaders share their insights and experiences. 
+            Engage in interactive workshops designed to enhance your personal effectiveness, leadership abilities, and communication skills.
+          </div>
+          <div class="column">
+            <ion-icon name="bulb" class="icon is-large"></ion-icon>
+            <p class="titleFont is-size-3 pb-5">Innovate</p>
+            SASE is a hub for knowledge-sharing and continuous learning. 
+            Our club hosts workshops, guest speaker events, and skill-building sessions that enhance your creative thinking abilities. 
+            Learn practical techniques for idea generation, problem-solving, and effective communication. 
+            Expand your toolkit of creative methods and gain the confidence to think outside the box.
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="hero is-medium">
-      <div class="hero-body gap"></div>
+      <div class="hero-body" id="gap1"></div>
     </section>
     
     <section class="section is-large">
       <div class="container white">
-        <p class="is-size-1 pb-5 maize titleFont">About SASE @ U of M</p>
-        <p class="saseGreen">
+        <p class="is-size-1 pb-5 umichBlue titleFont">Our Mission</p>
+        <p class="slateGray">
           The Society of Asian Scientists and Engineers is a nation-wide organization with the mission of providing opportunities for scientists and engineers of Asian heritage to enhance their professional skills and to connect them with industry-leading companies. 
           Our chapter aims to create a community of students at Michigan, and act as a gateway to workshops, volunteering events, company information sessions and much more. 
           We welcome students of all backgrounds to not only take advantage of the numerous events we organize, but also to help us in making these events possible!
         </p>
       </div>
     </section>
+
+    <section class="hero is-medium">
+      <div class="hero-body" id="gap2"></div>
+    </section>
+
+    <footer class="footer white" style="background-color:#002C5F">
+      <div class="content has-text-centered">
+          <p style="font-size:1.2rem">© 2023, Society of Asian Scientists and Engineers</p>
+          <p style="font-size:1.2rem">University of Michigan Chapter</p>
+          <p style="font-size:1.2rem">All Rights Reserved.</p>
+          <p class="pt-5" style="font-size:0.7rem">Website developed by <a href="https://robinhwang.onrender.com">Robin Hwang</a>, Class of 2026</p>
+      </div>
+    </footer>
 
     <script src="main.js"></script>
   </body>

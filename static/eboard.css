@@ -1,0 +1,69 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size:1.3em;
+}
+
+.titleFont {
+    font-family: 'Staatliches', cursive;
+}
+
+.umichBlue {
+    color: #002C5F;
+}
+
+.umichBlueBg {
+    background-color: #002C5F;
+}
+
+.maize {
+    color: #FFCB05;
+}
+
+.maizeBg {
+    background-color: #FFCB05;
+}
+
+.saseGreen {
+    color:#7DC242;
+}
+
+.saseGreenBg {
+    background-color:#7DC242;
+}
+
+.white {
+    color:white;
+}
+
+.whiteBg {
+    background-color:white;
+}
+
+.slateGray {
+    color: #6C757D
+}
+
+h1 {
+    font-size:6rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size:2rem;
+}
+
+#navbarBasic {
+    font-size: 1.3rem;
+}
+
+#intro {
+
+}
+
+
+
+ion-icon {
+    font-size: 256px;
+}
+
+.footer
