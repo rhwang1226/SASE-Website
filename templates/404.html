@@ -13,37 +13,20 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="/static/eboard.css">
+    <style>
+        .section {
+            min-height: 90vh;
+        }
+    </style>
   </head>
 
   <body>
     {% include 'navbar.html' %}
     
-    <section class="section is-medium" style="min-height:90vh">
+    <section class="section is-medium">
       <div class="container has-text-centered">
-        <p class="titleFont is-size-1 pb-6">Meet the Executive Board</p>
-        <div class="columns is-centered">
-        {% for item in eboardRows %}
-        {% if loop.index0 % 3 == 0 %}
-          </div><div class="columns is-centered">
-        {% endif %}
-          <div class="column is-one-third">
-            <div class="card">
-              <div class="card-image">
-                <figure class="image is-5by3">
-                  <img src="/static/resources/{{ item.picture }}" alt="Placeholder image">
-                </figure>
-              </div>
-
-              <div class="card-content">
-                <div class="content">
-                  <span class="titleFont is-size-3">{{ item.name }}</span><br>
-                  <span class="titleFont is-size-3">{{ item.position }}</span><br>
-                  <p style="font-size: 1rem;">{{ item.greeting }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        {% endfor %}
+        <p class="titleFont is-size-1 pb-6">Error 404: Page Not Found</p>
+        <p class="is-size-3">Oops! You've reached a dead end. The page you are looking for does not exist. If you entered the URL manually, please check your spelling and try again.</p>
       </div>
     </section>
 

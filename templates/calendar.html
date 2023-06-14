@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SASE at the University of Michigan</title>
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="/static/main.css">
+  </head>
+
+  <body style="background-color: #002C5F;">
+    {% include 'navbar.html' %}
+    <section class="section is-medium" style="background-color: white;">
+        <p class="titleFont is-size-1 has-text-centered pb-6">SASE @ UMich Events Calendar</p>
+        <div class="container has-text-centered"> 
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23EF6C00&ctz=America%2FNew_York&src=dW1pY2guZWR1X2toajZmZGU1djVrNjQzbnN0OGw0a3RvOHJvQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23F09300" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </section>
+    {% include 'footer.html' %}
+
+    <script src="/static/main.js"></script>
+  </body>
+</html>

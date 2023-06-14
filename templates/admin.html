@@ -17,11 +17,99 @@
 
   <body>
     {% include 'navbar.html' %}
-    
     <section class="section is-medium">
-        <div class="container">
+      <p class="titleFont is-size-1 has-text-centered">Administrator Panel</p>
+      <p class="defaultFont is-size-5 has-text-centered pb-6">Done making changes? <a href='/logout'>Log out now.</a></p>
+      <div class="container">
+        <p class="titleFont is-size-3 has-text-left">Add an E-Board Member</p>
+        <form method="post" action="/admin/add-eboard-member" enctype="multipart/form-data">
+          <div class="field">
+            <label class="label">E-Board Member Name</label>
+            <div class="control">
+              <input id="addName" name="name" class="input defaultFont" type="text" placeholder="e.g. Robin Hwang">
+            </div>
+          </div>
             
+          <div class="field">
+            <label class="label">Position</label>
+            <div class="control">
+              <input id="addPosition" name="position" class="input defaultFont" type="text" placeholder="e.g. Marketing Chair">
+            </div>
+          </div>
+
+          <div class="field">
+              <label class="label">Greeting</label>
+              <div class="control">
+                  <textarea id="addGreeting" name="greeting" class="textarea defaultFont" placeholder="e.g. Robin attends the University of Michigan and is the College of Literature, Science, and the Arts." rows="8"></textarea>
+              </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Profile Picture Upload</label>
+            <span class="is-size-6">Please upload a picture that is 3 X 5 and landscape orientation.</span>
+            <div class="file is-normal has-name">
+              <label class="file-label" accept="image/png, image/jpg, image/jpeg">
+                <input class="file-input" type="file" name="resume">
+                <span class="file-cta">
+                  <span class="file-icon">
+                    <ion-icon name="share" size="large"></ion-icon>
+                  </span>
+                  <span class="file-label">
+                    Click to upload...
+                  </span>
+                </span>
+                <span class="file-name">
+                  File name
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="control">
+              <button id="addMember" class="button defaultFont">Add Member</button>
+          </div>
+        </form>
+      </div>
+
+      <section class="hero is-small">
+        <div class="hero-body">
         </div>
+      </section>
+
+      <div class="container">
+        <p class="titleFont is-size-3 has-text-left">Delete an E-Board Member</p>
+        <form method="delete" action="/admin/delete-eboard-member">
+          <div class="field is-grouped">
+              <div class="control">
+                <div class="select">
+                  <select class="defaultFont" name="name">
+                  {% for item in eboardRows %}
+                    <option>{{ item["name"] }}</option>
+                  {% endfor %}
+                  </select>
+                </div>
+              </div>
+              
+              <div class="control">
+                  <button class="button defaultFont" id="deleteName">Delete Member</button>
+              </div>
+          </div>
+        </form>
+      </div>
+
+      <section class="hero is-small">
+        <div class="hero-body">
+        </div>
+      </section>
+
+      <div class="container">
+        <p class="titleFont is-size-3 has-text-left">Reset E-Board Page</p>
+        <form method="delete" action="/admin/reset-eboard">
+          <div class="control">
+              <button class="button defaultFont" id="resetEboard">Reset E-Board (Erases All Data on E-Board Page)</button>
+          </div>
+        </form>
+      </div>
     </section>
 
     {% include 'footer.html' %}
