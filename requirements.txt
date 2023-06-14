@@ -3,3 +3,7 @@ flask_sqlalchemy
 flask_login
 virtualenv
 waitress
+dotenv
+werkzeug.utils
+bcrypt
+os
