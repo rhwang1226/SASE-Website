@@ -4,7 +4,6 @@ import sqlite3
 from sqlite3 import Error
 from waitress import serve
 import os
-from flask_bcrypt import Bcrypt
 import bcrypt
 from werkzeug.utils import secure_filename
 
