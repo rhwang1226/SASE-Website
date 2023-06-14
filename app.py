@@ -6,9 +6,13 @@ from waitress import serve
 import os
 import bcrypt
 from werkzeug.utils import secure_filename
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 app.config['DATABASE'] = 'database.db'  # SQLite database file
+app.config['SECRET_KEY'] = os.environ.get('KEY')
 
 app.static_folder = 'static'
 

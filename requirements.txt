@@ -5,3 +5,4 @@ virtualenv
 waitress
 werkzeug
 bcrypt
+python-dotenv
