@@ -4,16 +4,12 @@ import sqlite3
 from sqlite3 import Error
 from waitress import serve
 import os
-from dotenv import load_dotenv
 from flask_bcrypt import Bcrypt
 import bcrypt
 from werkzeug.utils import secure_filename
 
-load_dotenv()
-
 app = Flask(__name__)
 app.config['DATABASE'] = 'database.db'  # SQLite database file
-app.config['SECRET_KEY'] = os.environ.get('KEY')
 
 app.static_folder = 'static'
 
