@@ -11,7 +11,7 @@ con.execute('CREATE TABLE eboard (name TEXT NOT NULL, position TEXT NOT NULL, gr
 con.execute('CREATE TABLE login (username TEXT UNIQUE NOT NULL, password TEXT NOT NULL, salt TEXT NOT NULL)')
 print("Created table successfully!")
 
-unhashed = "sasegoblue"
+unhashed = "umichsasemaize"
 salt = bcrypt.gensalt()
 password = bcrypt.hashpw(unhashed.encode('utf-8'), salt)
 print("Hashed String:", password.decode('utf-8'))
